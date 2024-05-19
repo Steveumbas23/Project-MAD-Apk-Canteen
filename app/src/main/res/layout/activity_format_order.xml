@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormatOrder">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg2"
+        android:layout_marginTop="-840dp"/>
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tvFormatOrder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Format Order"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvFormat"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tvFormatOrder"
+        android:text="Silahkan melengkapi Format Orderan"/>
+
+    <TextView
+        android:id="@+id/tvOrder"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tvFormat"
+        android:text="dibawah ini :"/>
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/tvOrder"
+        android:background="@drawable/bg_btn_stroke"
+        android:inputType="text"
+        android:hint="Nama Lengkap"
+        android:padding="18dp"
+        android:layout_marginTop="0dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/etNama"
+        android:background="@drawable/bg_btn_stroke"
+        android:inputType="text"
+        android:hint="Nomor Telepon"
+        android:padding="18dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/etNo"
+        android:background="@drawable/bg_btn_stroke"
+        android:inputType="text"
+        android:hint="Alamat Pengiriman"
+        android:padding="18dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etMetode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/etAlamat"
+        android:background="@drawable/bg_btn_stroke"
+        android:inputType="text"
+        android:hint="Metode Pembayaran"
+        android:padding="18dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/etMetode"
+        android:background="@drawable/bg_btn_stroke"
+        android:inputType="text"
+        android:hint="Catatan Khusus (Kepada pihak kantin):"
+        android:gravity="top"
+        android:padding="18dp"
+        android:layout_marginTop="40dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="280dp"
+        android:layout_below="@+id/etCatatan"
+        android:text="send"
+        android:textStyle="bold"
+        android:backgroundTint="#222730"
+        android:textSize="19dp"/>
+
+</RelativeLayout>

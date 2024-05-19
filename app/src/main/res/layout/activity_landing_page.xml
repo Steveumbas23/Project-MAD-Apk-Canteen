@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".LandingPage">
+
+    <TextView
+        android:id="@+id/tvCFE1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome To"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/tvCFE"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:text="U - Canteen"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/tvCFE1"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="813dp"
+        android:layout_below="@+id/tvCFE"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="-46dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-36dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="335dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="35dp"
+        android:text="GET STARTED"
+        android:textStyle="bold"
+        android:backgroundTint="#222730"
+        android:textSize="25dp"/>
+
+</RelativeLayout>

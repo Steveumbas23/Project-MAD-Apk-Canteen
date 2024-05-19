@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".QR">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg2"
+        android:layout_marginTop="-840dp"/>
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/ivQR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/qr"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SCAN QR"
+        android:textSize="48dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="550dp"
+        android:gravity="center"/>
+</RelativeLayout>
